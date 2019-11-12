@@ -1,0 +1,120 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    html {
+        font-size: 15px;
+    }
+    .aboutUs {
+        min-height: 880px;
+    }
+
+    .ourServices {
+        &__mainBlock {
+            min-height: 350px;
+        }
+        &__secondaryBlock {
+            min-height: 320px;
+        }
+    }
+
+    .whatTheySays {
+        .owl-nav {
+            bottom: -40px;
+            right: -565px;
+        }
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    html {
+        font-size: 14px;
+    }
+
+    .mainHeader {
+        &__titleText {
+            font-size: 2.35rem;
+        }
+    }
+
+    .aboutUs {
+        &__subsection{
+            margin-top: 7rem;
+        }
+        &__h4 {
+            margin-top: 30px;
+        }
+    }
+
+    .mapForm {
+        margin-top: 40px;
+    }
+
+    .whatTheySays {
+        &__descBlock {
+            margin-top: 50px;
+        }
+
+        .owl-nav {
+            position: static;
+            margin: 10px 0;
+        }
+
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .h2Title {
+        margin-top: 5rem;
+        line-height: 2.75rem;
+    }
+
+    .mainHeader__colorSpill {
+        top: 250px;
+    }
+
+    .featuredWorks__list,
+    .aboutUs__subsection,
+    .ourServices__blocks,
+    .smallTeam__photos,
+    .whatTheySays__wrap,
+    .partners__icons,
+    .contacts__forms,
+    .whatTheySays__descTitle{
+        margin-top: calc(5rem - 30px);
+    }
+
+    .whatTheySays__wrap,
+    .contacts__forms,
+    .partners__icons{
+        margin-bottom: 5rem;
+    }
+    .aboutUs__subsection {
+        padding-bottom: 3rem;
+    }
+
+    .ourServices {
+        &__mainBlock, &__secondaryBlock {
+            min-height: 320px;
+            height: auto;
+        }
+    }
+
+    .whatTheySays__descBlock {
+        min-height: 250px;
+    }
+
+    .mainHeader__colorSpill {
+        right: 0;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 576px) {
+    .whatTheySays {
+        &__desc {
+            padding: 0 20px;
+        }
+    }
+}
