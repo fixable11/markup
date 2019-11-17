@@ -1,0 +1,164 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    html {
+        font-size: 15px;
+    }
+    .intro {
+        &__container {
+            min-height: 600px;
+        }
+    }
+    .appointment {
+        &__inner {
+            justify-content: center;
+        }
+        &__figure {
+            display: none;
+        }
+    }
+    .appointmentForm {
+        padding-left: 0;
+        &__btn {
+            margin-bottom: 30px;
+        }
+        &__input {
+            text-indent: 3px;
+            &_select {
+                text-indent: 0;
+            }
+        }
+        &__input_margin {
+            margin-top: 30px;
+        }
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .intro {
+        &__spaImg {
+            display: none;
+        }
+        &__suptitle {
+            margin-top: 60px;
+        }
+        &__container {
+            min-height: auto;
+        }
+    }
+    .procedures {
+        &__item {
+            margin-top: 30px;
+        }
+    }
+    .team {
+        &__item {
+            margin-top: 30px;
+        }
+    }
+    #map {
+        height: 400px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    html {
+        font-size: 14px;
+    }
+    .intro {
+
+    }
+
+    .mainHeader {
+        position: relative;
+        &__nav {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 100;
+        }
+        &__navList {
+            padding: 15px;
+            flex-direction: column;
+            background-color: $pink;
+            display: none;
+        }
+        &__navLink {
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    .nav {
+        &__hamburger {
+            display: block;
+        }
+    }
+    .procedures {
+        padding: 5rem 0;
+        &__wrap {
+            margin-top: 30px;
+        }
+    }
+    .comment, .team, .latest {
+        padding: 5rem 0;
+    }
+    .touch {
+        padding-bottom: 5rem;
+    }
+    .comments {
+        .owl-dots {
+            bottom: 20px;
+        }
+    }
+    .mainFooter {
+        height: 320px;
+    }
+    #map {
+        height: 300px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 576px) {
+    .intro {
+        &__suptitle {
+
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        &__reserve {
+            margin-top: 30px;
+        }
+        &__watchWrap {
+            margin: 0 15px;
+        }
+        &__btn {
+            padding: 0 10px;
+        }
+    }
+    .aboutSpa {
+        &__logo {
+            margin-top: 30px;
+        }
+        &__btn {
+            margin-bottom: 70px;
+        }
+    }
+    .touchForm {
+        text-align: center;
+    }
+    .appointment {
+        &__form {
+            flex-basis: 90%;
+        }
+    }
+    #map {
+        height: 300px;
+    }
+}
